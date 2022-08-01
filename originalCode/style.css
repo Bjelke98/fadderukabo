@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* @font-face {
+@font-face {
     font-family: TTFont-Light;
     src: url("font/TT\ Commons\ Light.otf");
 }
@@ -32,7 +32,7 @@
 @font-face {
     font-family: ContentText;
     src: url("font/WorkSans-Regular.ttf");
-} */
+}
 
 .text-number {
     font-family: "Title";
@@ -115,7 +115,7 @@
 
 
 .count-body {
-    /* background-image: url("images/fjell.jpg"); */
+    background-image: url("images/fjell.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -594,7 +594,6 @@ table thead {
     bottom: 0;
     left: 0;
     z-index: 1;
-    transform: scaleX(0);
 }
 .box .title{
     font-size: 22px;
@@ -744,21 +743,3 @@ table thead {
       display: none;
     }
   }
-
-  /* Krister Iversen */
-  .box-content {
-    transform-origin: left;
-    transition: all 0.5s cubic-bezier(0.66, 0.08, 0.19, 0.97);
-  }
-  .box:hover .box-content {
-    transform: scaleX(1);
-  }
-
-  /* .alice-carousel__wrapper {
-    width: 100%;
-    height: 300px!important;
-  } */
-  /* img.alice {
-    height: 400px;
-    object-fit: cover;
-  } */

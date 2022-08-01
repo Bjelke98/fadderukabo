@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadderuka</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../hover.css" />
+    <script src="https://kit.fontawesome.com/08bfb5054f.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <nav class="navbar navbar-expand-lg bg-light nav-style">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.usn.no/getfile.php/13520469-1525427372/usn.no/om_USN/Logo%20og%20grafiske%20elementer/USN_logotype.png"
+                    alt="" height="75" class="d-i"></a>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+
+        <div class="input-group rounded my-3">
+            <input type="search" class="form-control rounded" placeholder="Søk etter fadder..." id="myInput"
+                name="myInput" aria-label="Search" list="linjer" />
+            <span class="input-group-text border-0">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+
+        <datalist id="linjer">
+
+            <option value="Faddersjef"></option>
+            <option value="Eiendomsmegling"></option>
+            <option value="IT og informasjonssystemer"></option>
+            <option value="Kulturledelse"></option>
+            <option value="International"></option>
+            <option value="Idrett, trening og ledelse"></option>
+            <option value="Internasjonal markedsføring"></option>
+            <option value="Innovasjon og entreprenørskap"></option>
+            <option value="Natur, miljø og friluftsliv"></option>
+            <option value="Økonomi og ledelse"></option>
+        </datalist>
+        <div class="table-responsive rounded">
+            <table class="table table-striped table-hover align-middle mb fixedHeader">
+
+                <thead class="bg-dark text-white small">
+                    <tr>
+                        <th>Navn</th>
+                        <th>Linje</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider" id="tableData">
+
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color: skyblue;"></i>Åsmund Snorresønn Haugaard<span style="display: none;">Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Admir Osmani</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Adrian Nathaniel Andersen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Amalie Noraker Pettersen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Anders Holmberg Johnsen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Arne Martin Tysvær</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Celine Michelsen Leines</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Christer Brekka</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Christoffer Vindum</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emilie Githmark Solhaug</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emilie Nielsen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emilie Aae Gjermstad</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Frida Sommer Gunnulfsen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Gard Mathias Dolve Mysen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Gowshigan Kohilaraj</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Hanne Lene Norheim</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Ida Camilla Aase</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Joar Støkket Eik</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jon Andre Pindsle</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jonas Kolberg</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Julie Danielsen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Julius Bach Akerholt</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Karoline Moen Berg</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Kristine Greaker</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Lillie Mathilde Koland Dalane</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Lotte Strand Jonsmyr</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Magnus Disch Thorvaldsen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Malin Bøhn</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marte Blömacher</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marthe Kals Stenersen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marthine Valmestadrød</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Mia Ravnås</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Mikael Dvergastein Hansen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Oda Fløtaker</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sander Hovde</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Selina Kolakovic</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sonja Sora Bienen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sunniva Amalie Odberg-Kjær</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Thea Ahlbom Johansen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Thomas Rønning Valderhaug</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tobias Ingvardsen Sture</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Victor Falkenberg Martins</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Victoria Treland</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Viktoria Tønnessen</span>
+                        </td>
+                        <td>
+                            <span
+                                class="badge badge-pill rounded-pill f-eiendomegling text-dark f-text">Eiendomsmegling</span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color: orange"></i>Frøy Marius Trenum Kruse<span style="display: none;">Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Adrian Faaberg Sundbø</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Adrian Jørgensen Vold</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Aleksander Rønbeck Lunga</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andreas Helgesen Barstad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andreas Sebastian Fougerand</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Casper Moen Gundersen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Håvard Ananiassen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jenny Kristine Brække Brandvold</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Joakim Nergård</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Karen Emilie Bjordal</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Lone Pollestad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marco Lindalen Da Silva</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Oda Kvammen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Oskar Aspelund</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sander Brendalsmo Salte</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Stian Gryting Thorvaldsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tommy Christoffer Romarheim</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-idrett text-dark f-text">Idrett, trening og ledelse</span>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color: gold"></i>Kjetil Alsen<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Erlen Iversen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Frida Wølner Voss</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Iselin Kjelbergnes Staakkan</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jonas Berget Eide</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marcus Wold Lundgård</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Markus Kvifte</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Ole Kristian Ågotnes</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Rosanne Evi Van Der Vloed</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tuva Høibakke</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-innovasjon text-dark f-text">Innovasjon og entreprenørskap</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color:palevioletred;"></i>Sara Moe Snapa<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Albertine Linesdatter Ellingsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andrea Solheim Skretting</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Anna Sun Jung Hjertenes</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Benedicte Larsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Charlotte Hamlot</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Eivind Wold</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emilia Bakkeløkken</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Fredrik Axelsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Fredrik Berg Strømstad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Heidi Remmereit</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Helle Grüner</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Henriette Landro</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jane Juell Osmo</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Kai Anders Bugtene</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Linujann Balasegar</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Lisa Evju</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Magnus Tørre</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Magnus Østengen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Olav Winther</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Pia Sandsmark</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sara Emilie Kant</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tone Marie Ytterbøe Nordh</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tristan Hasselquist Gunnarschjå</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Trym Breivikås</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-markedsforing text-dark f-text">Internasjonal markedsføring</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color: purple;"></i>Adrian Shailesh Dahl<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Alexander Roan Ovesen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andrea Marie Sæter</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andreas Myrmo Kjørås</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andris Gustavsen Høiseth</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Daniel Moosaui Feili</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Daniel Vikan</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Dion Prieler</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Elias Kjøll Kristensen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emil Weiberg-Aurdal Aandahl</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Erik Rosland</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Gaute Hermansen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Haoyang Lu</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Herman Firing Simonsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Håvard Garsrud</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>John Ivar Lilleøren Hagene</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jøran Clausen Jøsang</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Krister Iversen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Mads Rønningen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Magnus Løiten Fjeldberg</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    
+                
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Olav Pålerud Lille-Østerholt</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Oscar Skauge Eriksen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Poul André Grevsen Røinaas</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sanel Pitnjakovic</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sondre Skaug Alvestad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Susannah Gilbu</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Thomas Kirkeng</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Turid Lovise Eliassen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Vegard Hjerpaasen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Yonatan Adam Mulugeta</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-it f-text">IT og informasjonssystemer</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color:#D0312D"></i>Mikkel Solberg<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andrea Bratli Indregård</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Elisabeth Regine Myrland</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emilie Sætre</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Emma Sofie Kvam</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Helene Hogstad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Hyndla Aira</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Iselina Johansen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Joakim Randby Garthus</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marius Nordli</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Mathilde Brenden Skjellerud</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Sara Halima Habib Wang</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tatjana Maria Matic Siemer</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tuva Fredrikke Digre</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Yngve Solsvik Asheim</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-kulturledelse f-text">Kulturledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color:green"></i>Martin Midbøe<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Adeline Meel Lunde</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Alfred Hannibal Høgsbro-Nielsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Felix André Hermansen Bolle</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Floris Meijer</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Gry Anniken Kvaale Ramdal</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Hedda Kavring Gjone</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Ingrid Maria Bik</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Ingrid Olstad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jenny Kristina Skorpen Kvamme</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jimmy Xie</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jo-Tellef Myhre</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Kari Tone Foldøy</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Kristin Heggenes Haave</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Mariell Bergestig Olsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Nikoline Knutsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Ola Vågane</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Stine Marie Iversen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Yann Busson</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-natur f-text">Natur, miljø og friluftsliv</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color:#3944BC"></i>Rikke Hjelseth Larsen<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Adrian Mateusz Oleksiak</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Aleksander Svensrud Jørgensen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Alexander Valstad Haveråen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>André Sommerfelt Seljåsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andreas Torp</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Andrine Huseth Johansen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Anukshi Jeyarajah</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Barbro Alexandra Rosseland</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Elisabeth Frigstad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Jeton Ajvazi</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Joachim Ricci Eikelid</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Kari Sandnes</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Kristine Linna Høven</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Magnus Lindland</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Malene Fjellestad Bakken</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Maren Kaarmo</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Marius Vallheim</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Simon Arneberg</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Stine Nåvik-Husveg</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Synnøve Bjørgum</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Thea Bergum</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Thea Høgseth</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-circle-user me-2"></i>Tonje Jonsås Svendsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-okonomi f-text">Økonomi og ledelse</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                    class="fa-solid fa-crown me-2" style="color:burlywood"></i>Christoffer Rustad<span
+                                    style="display: none;"> Faddersjef</span></span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Adrian Joachin</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Alexis Nadir Garcia-Benchakhtir</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Andrea Madeleine Simonsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Erlend Holen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Glen Roar Lintho</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Hisham Mohamed Haleemdeen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Julian Erikson</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Maia Sørensen Lundby</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Maike Zillgitt</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Malin Urdalen Høyset</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Marius Norman Grut-Thorsen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Marta Solheim</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Marte Bottolfs Brekke</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Martin Hodne</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Minh Tinh Tran</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Mohammed Essam Abdulrahman</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Patrick Kristiansen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Simon Fritzman Laamiri</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Tim Emin André Rajala</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Vetle José Kløvstad</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="ms-2 badge rounded-pill bg-light text-dark f-text"><i
+                                class="fa-solid fa-circle-user me-2"></i>Vilde Jensen</span>
+                        </td>
+                        <td>
+                            <span class="badge badge-pill rounded-pill f-international text-dark f-text">International</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#tableData tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 1500
+        });
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

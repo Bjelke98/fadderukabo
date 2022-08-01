@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fadderuka</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hover.css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/08bfb5054f.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <nav class="navbar navbar-expand-lg bg-light nav-style">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://www.usn.no/getfile.php/13520469-1525427372/usn.no/om_USN/Logo%20og%20grafiske%20elementer/USN_logotype.png"
+          alt="" height="75" class="d-i"></a>
+      <button class="navbar-toggler btn btn-light btn-outline-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fadder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">International</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--
+        <div
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+  >
+  </div>
+  -->
+  <!-- Møt Fadderstyret -->
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h1 class="landing-text">Møt fadderstyret</h1>
+        <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line rounded">
+      </div>
+      <div class="col-8">
+        <span class="landing-text">Hei</span>
+      </div>
+    </div>
+    <div class="row row-cols-lg-5 text-center justify-content-between mt-2">
+
+
+      <div class="col-lg-2 col-sm-6 col-xs-6">
+        <div class="pb-2"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+
+      <div class="col col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+
+      <div class="col col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4">
+        <div class="pb-4"><img src="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"
+            alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4">
+          <h5 class="mb-0 navfont-text text-uppercase fw-bold">Adrian Dahl</h5>
+          <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded">
+          <span class="small text-muted">Leder</span>
+        </div>
+      </div>
+      <div class="col col-sm-6 col-xs-6 mb-4"></div>
+      <div class="col-lg-2 col-sm-6 col-xs-6 mb-4"></div>
+    
+      
+  
+    </div>
+    
+
+  </div>
+<!-- Trygg Fadder-->
+  <div class="bg-light">
+    <div class="container py-5">
+      <div class="d-flex text-center justify-content-between">
+      <img src="images/tryggfadder.png" class="text-bg-danger">
+      <h1>TRYGG FADDER</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Ofte stilte spørsmål</h1>
+    <div class="accordion accordion-flush " id="accordionFlushExample">
+      <div class="accordion-item border-bottom-0">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed rounded m-2 border" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item border-bottom-0">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed rounded m-2 border" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+            filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item border-bottom-0">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed rounded m-2 border" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
+            a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer text-dark">
+        <div class="topfooter">
+          <hr class="bg-dark">
+        </div>
+        <div class="bottomfooter justify-content-center">
+          <div class="float-start"><img
+              src="https://www.usn.no/getfile.php/13520469-1525427372/usn.no/om_USN/Logo%20og%20grafiske%20elementer/USN_logotype.png"
+              alt="" height="45" class="d-i">FADDERSTYRET @ 2022</div>
+          <div class="float-end">
+            <a>En</a>
+            <div class="vr"></div>
+            <a>No</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      dots: true,
+      autoplay: false,
+      autoplayTimeout: 3500,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 1500
+    });
+  </script>
+</body>
+
+</html>
+</body>
+
+</html>

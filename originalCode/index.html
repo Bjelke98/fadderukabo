@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fadderuka</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/08bfb5054f.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="hover.css" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <nav class="navbar navbar-expand-lg nav-style pt-0 pb-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://www.usn.no/getfile.php/13520469-1525427372/usn.no/om_USN/Logo%20og%20grafiske%20elementer/USN_logotype.png"
+          alt="" height="75" class="d-i"></a>
+      <button class="navbar-toggler btn btn-light btn-outline-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav landing-text">
+          <li class="nav-item">
+            <a class="nav-link active-page" aria-current="page" href="#">Hjem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fadder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">International</a>
+          </li>
+          <li class="vr"></li>
+          <li class="nav-item">
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                no
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--
+        <div
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
+  >
+  </div>
+  -->
+
+  <!--
+      Header content
+  -->
+  <div class="page-overlay">
+    <div class="count-body" data-aos="fade-down" data-aos-duration="1500">
+      <h1 class="landing-text">Fadderuka Bø</h1>
+      <h4 class="landing-text">15. - 21. August 2022</h4>
+      <div class="countdown-container landing-text">
+
+        <div class="countdown-el days-c">
+          <p class="big-text" id="days">0</p>
+          <span>Dager</span>
+        </div>
+        <div class="countdown-el hours-c">
+          <p class="big-text" id="hours">0</p>
+          <span>Timer</span>
+        </div>
+        <div class="countdown-el mins-c">
+          <p class="big-text" id="mins">0</p>
+          <span>Minutter</span>
+        </div>
+        <div class="countdown-el seconds-c">
+          <p class="big-text" id="seconds">0</p>
+          <span>Sekunder</span>
+        </div>
+      </div>
+      <div class="program-btn">
+        <a class="btn btn-light landing-text" href="#">
+          Program
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Startssiden etter nedtelling-->
+
+<div>
+  <div class="container py-5 pb-5 ">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="py-5 pb-5 container">
+          <span class="text-number text-blue">01.</span>
+          <span class="text-title">Fadderuka</span>
+          <p class="text-content mt-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <br>
+          <p class="text-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <img src="images/fadderukenforside.jpg" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark py-5">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="text-center">
+        <span class="text-number text-blue">04.</span>
+          <span class="text-title text-white">Fadderuka Bø</span>
+          </div>
+      </div>
+      <div class="row my-5">
+        
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="mx-5 mb-5 text-center">
+            <i class="fas fa-heart fa-2xl block w-100 mb-4 text-blue"></i>
+            <span class="text-title lead text-white">200 Faddere</span>
+            <p class="text-content mt-3 text-white">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="mx-5 mb-5 text-center">
+            <i class="fas fa-calendar-days fa-2xl block w-100 mb-4 text-blue"></i>
+            <span class="text-title lead text-white">47 Arrangementer</span>
+            <p class="text-content mt-3 text-white">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="mx-5 mb-5 text-center">
+            <i class="fas fa-cubes-stacked fa-2xl block w-100 mb-4 text-blue"></i>
+            <span class="text-title lead text-white">9 Faddergrupper</span>
+            <p class="text-content mt-3 text-white">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<!-- Karusell -->
+<div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="pt-5 pb-2 container">
+        <span class="text-number text-red">01.</span>
+        <span class="text-title">Studentlivet</span>
+        </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-12 m-auto">
+        <div class="owl-carousel owl-theme">
+          <div class="item box rounded">
+            <a href="#">
+              <img src="images/kroakonsertbø.jpg">
+              <div class="box-content">
+                <span class="text-title lead">Kroa</span>
+                <p class="text-content">Studentens samfunshus! Her er det mye spenning og morro, konserter og lek.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item box rounded">
+            <a href="#">
+              <img src="images/natur.jpg">
+              <div class="box-content">
+                <span class="text-title lead">Kroa</span>
+                <p class="text-content">Studentens samfunshus! Her er det mye spenning og morro, konserter og lek.</p>
+              </div>
+            </a>
+          </div>
+          <div class="item box rounded">
+            <a href="#">
+              <img src="images/GullbringKul.jpg">
+              <div class="box-content">
+                <span class="text-title lead">Kroa</span>
+                <p class="text-content">Studentens samfunshus! Her er det mye spenning og morro, konserter og lek.</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="bg-beige">
+    <div class="container py-5">
+      <div class="row">
+        <div class="pt-5 pb-2 container">
+          <div class="text-center">
+            <span class="text-number text-muted">01.</span>
+            <span class="text-title">Anmeldeser</span>
+          </div>
+          </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-12 m-auto">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="container">
+                <div class="my-4">
+                  <span class="text-title lead">Sara</span>
+                  <span class="text-number small quote-pink">Internasjonal markedsføring</span>
+                </div>
+                <div>
+                  <i class="fas fa-quote-left text-number quote-pink"></i>
+                  <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <i class="fas fa-quote-right text-number text-end quote-pink"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="container">
+                <div class="my-4">
+                  <span class="text-title lead">Sara</span>
+                  <span class="text-number small quote-it">IT og informasjonssystemer</span>
+                </div>
+                <div>
+                  <i class="fas fa-quote-left text-number quote-it"></i>
+                  <p class="text-content">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+                  <i class="fas fa-quote-right text-number text-end quote-it"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="container">
+                <div class="my-4">
+                  <span class="text-title lead">Kjetil</span>
+                  <span class="text-number small quote-innovasjon">Innovasjon og entreprenørskap</span>
+                </div>
+                <div>
+                  <i class="fas fa-quote-left text-number quote-innovasjon"></i>
+                  <p class="text-content">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+                  <i class="fas fa-quote-right text-number text-end quote-innovasjon"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="container">
+                <div class="my-4">
+                  <span class="text-title lead">Navn</span>
+                  <span class="text-number small quote-eiendom">Eiendomsmegling</span>
+                </div>
+                <div>
+                  <i class="fas fa-quote-left text-number quote-eiendom"></i>
+                  <p class="text-content">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+                  <i class="fas fa-quote-right text-number text-end quote-eiendom"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    </div>
+  <!--Noe annet-->
+  <div class="bg-beige py-5">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="text-center">
+      <span class="text-number text-red">03.</span>
+        <span class="text-title">Campus Bø</span>
+        </div>
+    </div>
+    <div class="row my-5">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="mx-5 mb-5 text-center">
+        <i class="fas fa-graduation-cap fa-2xl block w-100 mb-4 text-red"></i>
+        <span class="text-title lead">37 Studietilbud</span>
+        <p class="text-content mt-3">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="mx-5 mb-5 text-center">
+          <i class="fas fa-people-group fa-2xl block w-100 mb-4 text-red"></i>
+          <span class="text-title lead">3000 Studenter</span>
+          <p class="text-content mt-3">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="mx-5 mb-5 text-center">
+          <i class="fas fa-hand-holding-heart fa-2xl block w-100 mb-4 text-red"></i>
+          <span class="text-title lead">17 Studentorganisasjoner</span>
+          <p class="text-content mt-3">I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo</p>
+          </div>
+      </div>
+                       
+    </div>
+  </div>
+  </div>
+  
+  <!-- Foreninger i Bø-->
+  <!--
+  Studentdemokratitet
+  Root
+  Sigma
+  EMU
+  Fremme
+  Kroa
+  StartUSN
+  Nito
+  Spire
+  USN IL
+  Fadderstyret
+  Skape Innovasjon
+
+-->
+<div class="bg-light">
+  <div class="container">
+    <div class="container py-5">
+      <div class="row">
+        <span>04.</span>
+        <h1>Studentorganisasjoner</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 m-auto">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <a href="#">
+                <img src="images/kroakonsertbø.jpg" class="rounded">
+                <span class="centered">My super text.</span>
+              </a>
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/sommarlandbø.jpg" class="rounded">
+            </div>
+            <div class="item">
+              <img src="images/natur.jpg">
+            </div>
+            <div class="item">
+              <img src="images/usnil.jpg">
+            </div>
+            <div class="item">
+              <img src="https://northpointeprep.com/wp-content/uploads/IMG_4580-200x200.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Sponsorer-->
+  <div class="container py-5">
+    
+    <div class="row pt-5 pb-5 align-items-center">
+      <div class="col-lg-4 col-sm-12 mt-2">
+        <img
+          src="https://resources.mynewsdesk.com/image/upload/b_auto,c_pad,h_628,q_auto:good,w_1200/txbqrfozfpqajkf8kw1v.jpg"
+          width="250" class="mx-auto d-block">
+      </div>
+      <div class="col-lg-4 col-sm-12 mt-2">
+        <img src="images/USN_logo_rgb.png" width="250" class="mx-auto d-block">
+      </div>
+      <div class="col-lg-4 col-sm-12 mt-2">
+        <img src="https://files.nettsteder.regjeringen.no/wpuploads01/blogs.dir/337/files/2019/06/KD2Cbm_sort.png"
+          width="250" class="mx-auto d-block">
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="text-center text-lg-start text-dark bg-light">
+
+    <!-- Section: Links  -->
+
+    <div class="container text-center text-md-start pt-3">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img src="/images/USNIkon.png" width="100">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold pb-4">Fadderuka</h6>
+          <p>
+            <a href="#!" class="text-dark text-decoration-none">Fadderprogram</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark text-decoration-none">Studentmesse</a>
+          </p>
+
+          <p>
+            <a href="#!" class="text-dark text-decoration-none">Fadderliste</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold pb-4">Ny student?</h6>
+
+          <p>
+            <a href="#!" class="text-dark text-decoration-none">Ofte stilte spørsmål</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark text-decoration-none hvr-underline-reveal">Studentlivet</a>
+          </p>
+          <p>
+            <a href="#!" class="text-dark text-decoration-none">Studentorganisasjoner</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold pb-4">Kontakt</h6>
+
+          <p><i class="fa-solid fa-location-dot fa-sm me-2"></i></i><a href="#" class="text-decoration-none text-dark">Gullbringvegen 36, 3800 Bø, Norge</a></p>
+          <p><i class="fa-solid fa-at fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark">fadderstyretbo@gmail.com</a></p>
+          <p><i class="fa-brands fa-facebook-f fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark">facebook.com/fadderstyretbo</a></p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center hvr-pulse">
+
+        <img src="images/Instagram.png" width="100">
+        <span class="vr me-2 ms-2"></span>
+        <a href="https://www.instagram.com/fadderuka_bo/" class="text-decoration-none text-dark">
+          <h5 class="f-text">@fadderuka_bo</h5>
+        </a>
+
+      </div>
+    </div>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="container pb-3">
+      <hr>
+      <div class="d-flex justify-content-between text-dark">
+        <!-- Left -->
+        <div class="f-text">
+          <span>@ 2022 Fadderstyret Bø</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="text-dark m-2 small text-decoration-none f-text">
+            <i class="fa-solid fa-globe"></i><span class="ms-2">English</span></a>
+        </div>
+        <!-- Right -->
+      </div>
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 9000,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 1500
+    });
+  </script>
+</body>
+
+</html>
+</body>
+
+</html>
