@@ -38,7 +38,7 @@ const CountDown = () => {
       <h1 class="landing-text">Fadderuka Bø</h1>
       <h4 class="landing-text">15. - 21. August 2022</h4>
       <div class="countdown-container landing-text">
-
+      
         <div class="countdown-el days-c">
           <p class="big-text" id="days">{d}</p>
           <span>Dager</span>

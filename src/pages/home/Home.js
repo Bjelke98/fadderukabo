@@ -45,7 +45,7 @@ const StudentorgKarusell = () => (
         <div class="row">
           <div class="pt-5 pb-2 container">
             <span class="text-number text-red">05.</span>
-            <span class="text-title">Studentorganisasjoner</span>
+            <span class="text-title text-break">Studentorganisasjoner</span>
             </div>
         </div>
         <div class="row pb-5">
@@ -76,6 +76,7 @@ const StudentorgKarusell = () => (
 function Home() {
   return (
     <>
+      <CountDown/>
       <Fadderuka/>
       <StudentlivetKarusell/>
       <Campus/>
