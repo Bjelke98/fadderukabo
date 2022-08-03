@@ -27,7 +27,7 @@ const major = {
     color: "gold"
   },
   marked: {
-    name: "Internasjonal markedsførinng og reiseliv",
+    name: "Internasjonal markedsførinng",
     color: "pink"
   },
   it: {
@@ -47,7 +47,7 @@ const major = {
     color: "lead"
   },
   international: {
-    name: "Internationla students",
+    name: "International",
     color: "skin"
   },
 }
