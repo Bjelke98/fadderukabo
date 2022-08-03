@@ -27,7 +27,7 @@ const major = {
     color: "gold"
   },
   marked: {
-    name: "Internasjonal markedsførinng",
+    name: "Internasjonal markedsføring",
     color: "pink"
   },
   it: {
