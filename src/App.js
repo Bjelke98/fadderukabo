@@ -11,6 +11,7 @@ import Info from "./pages/info/Info";
 import NotFound from "./pages/NotFound";
 
 import { createContext } from "react";
+import Fadderliste from "./pages/fadderliste/Fadderliste";
 
 const major = {
   eiendom: {
@@ -64,6 +65,7 @@ const App = () => {
       <Route path="program" element={<Program/>} />
       <Route path="fadder" element={<Fadder/>} />
       <Route path="info" element={<Info/>} />
+      <Route path="fadderliste" element={<Fadderliste/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
 

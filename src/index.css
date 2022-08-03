@@ -158,9 +158,25 @@
     font-weight: normal!important;
 }
 
-.f-eiendomegling {
-    background-color: #87ceeb;
-}
+.f-blue { background-color: #87ceeb; color: black}
+.f-pink { background-color: palevioletred; color: black}
+.f-gold { background-color: #FFD700; color: black}
+.f-red { background-color: #d0312d; color: white}
+.f-orange { background-color: orange; color: black}
+.f-lead { background-color: #3944BC; color: white}
+.f-purple { background-color: purple; color: white}
+.f-green { background-color: #008000; color: white}
+.f-skin { background-color: burlywood; color: black}
+
+.f-text-blue { color: #87ceeb; }
+.f-text-pink { color: palevioletred; }
+.f-text-gold { color: #FFD700; }
+.f-text-red { color: #d0312d; }
+.f-text-orange { color: orange; }
+.f-text-lead { color: #3944BC; }
+.f-text-purple { color: purple; }
+.f-text-green { color: #008000; }
+.f-text-skin { color: burlywood; }
 
 .quote-eiendom {
     color: #87ceeb;
@@ -170,47 +186,13 @@
     color: palevioletred;
 }
 
-.f-markedsforing {
-    background-color: palevioletred;
-}
-
-.f-innovasjon {
-    background-color: yellow;
-}
-
 .quote-innovasjon {
     color: #F9D923;
-}
-
-.f-kulturledelse {
-    background-color: #d0312d;
-}
-
-.f-idrett {
-    background-color: orange;
-}
-
-.f-okonomi {
-    background-color: #3944BC;
-}
-
-.f-it {
-    background-color: purple;
 }
 
 .quote-it {
     color: purple;
 }
-
-.f-natur {
-    background-color: green;
-}
-
-.f-international {
-    background-color: burlywood;
-}
-
-
 
 .btn:focus {
     outline: none !important;
