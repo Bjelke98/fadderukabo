@@ -6,6 +6,52 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/home/Home";
 import Program from "./pages/program/Program";
+import Fadder from "./pages/fadder/Fadder";
+import Info from "./pages/info/Info";
+import NotFound from "./pages/NotFound";
+
+import { createContext } from "react";
+
+const major = {
+  eiendom: {
+    name: "Eiendomsmegling",
+    color: "blue"
+  },
+  idrett: {
+    name: "Idrett, trening og ledelse",
+    color: "orange"
+  },
+  innovasjon: {
+    name: "Innovasjon og entreprenørskap",
+    color: "gold"
+  },
+  marked: {
+    name: "Internasjonal markedsførinng og reiseliv",
+    color: "pink"
+  },
+  it: {
+    name: "IT og Informasjonssystemer",
+    color: "purple"
+  },
+  kultur: {
+    name: "Kulturledelse",
+    color: "red"
+  },
+  natur: {
+    name: "Natur, miljø og friluftsliv",
+    color: "green"
+  },
+  økonomi: {
+    name: "Økonomi og ledelse",
+    color: "lead"
+  },
+  international: {
+    name: "Internationla students",
+    color: "skin"
+  },
+}
+
+export const MajorContext = createContext(major);
 
 const App = () => {
   
@@ -16,6 +62,9 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="program" element={<Program/>} />
+      <Route path="fadder" element={<Fadder/>} />
+      <Route path="info" element={<Info/>} />
+      <Route path="*" element={<NotFound/>} />
     </Routes>
 
     <Footer/>

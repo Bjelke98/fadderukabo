@@ -81,8 +81,8 @@ const Day = ({day, event}) => {
 
         <div class="row justify-content-start">
           
-          {event.map(de=>(
-            <Event event={de}/>
+          {event.map((de, index)=>(
+            <Event key={index} event={de}/>
           ))}
 
         </div>
@@ -138,8 +138,8 @@ const Event = ({event}) => {
 const Program = () => {
   return (
   <div class="wrap">
-    {eventlist.map(wd=>(
-      <Day day={wd.day} event={wd.event}/>
+    {eventlist.map((wd, index)=>(
+      <Day key={index} day={wd.day} event={wd.event}/>
     ))}
   </div>
   );
