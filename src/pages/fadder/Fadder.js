@@ -82,15 +82,29 @@ const Fadder01 = () => (
 
 const Fadder02 = () => (
 <div>
-  <div class="bg-light">
-    <div class="container py-5">
-      <div class="justify-content-between">
+<div class="bg-light">
+    <div class="container">
       <div class="row pt-5">
-        <span class="text-number">02.</span>
-        <span class="text-title text-red">Trygg fadder</span>
-      </div>
-      <img src="images/tryggfadder.png" class="bg-red"/>
-      </div>
+        
+        <div class="col-md-6 col-xs-12 text-center">
+          <img src="images/tryggfadder.png" class="bg-red m-3"/>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="m-3">
+          <span class="text-number">02.</span>
+          <span class="text-title text-red text-uppercase">Trygg fadder</span>
+          <p class="text-content">For Universitetet i Sørøst-Norge er det viktig å sikre at våre ansatte, studenter og besøkende ferdes trygt og har et godt arbeids- og studiemiljø. På <span><a href="#">sikresiden.no</a></span> får du opplæring og råd om hva du kan gjøre forebyggende og i krisesituasjoner.</p>
+          </div>
+        </div>
+        </div>
+        <div class="row pb-5 text-center">
+          <div class="m-3">
+            <button type="button"
+                  class="btn btn-dark opacity-80 rounded-pill px-4 text-uppercase">
+                  <span class="text-content"><a href="#" class="text-decoration-none text-light">sikresiden.no</a></span>
+                </button>
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -101,6 +115,7 @@ const Fadder03Card = ({title, description, image, link="#"}) => (
         <div class="card rounded bg-light border border-light shadow-sm hvr-float h-100 faddergrupper">
           <div class="bg-image hover-overlay">
             <img src={image} class="img-fluid rounded-top"/>
+            
           </div>
 
           <div class="card-body">
@@ -177,12 +192,12 @@ const Fadder03 = () => (
 const Fadder04 = () => {
   const major = React.useContext(MajorContext);
   return (
-    <div class="bg-light">
+    <div class="bg-beige">
       <div class="container py-5">
         <div class="row">
           <div class="pt-5 pb-2 container">
             <div class="text-center">
-              <span class="text-number text-muted">01.</span>
+              <span class="text-number text-muted">04.</span>
               <span class="text-title">Anmeldeser</span>
             </div>
             </div>
@@ -193,7 +208,7 @@ const Fadder04 = () => {
               <Karusell>
               <KarusellTextItem name="Sara"
                   major={major.marked}
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
+                  description="na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
               <KarusellTextItem name="Sara"
                   major={major.it}
                   description="I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo"/>

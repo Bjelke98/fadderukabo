@@ -21,16 +21,16 @@ const Footer = () => {
         {/* <!-- Grid column --> */}
         <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-4">
           {/* <!-- Links --> */}
-          <h6 class="text-uppercase fw-bold pb-4">Fadderuka</h6>
+          <h6 class="text-uppercase fw-bold pb-4 text-sub-title">Fadderuka</h6>
           <p>
-            <a href="#!" class="text-dark text-decoration-none">Fadderprogram</a>
+            <a href="#!" class="text-dark text-decoration-none text-content">Fadderprogram</a>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none">Studentmesse</a>
+            <a href="#!" class="text-dark text-decoration-none text-content">Studentmesse</a>
           </p>
 
           <p>
-            <a href="#!" class="text-dark text-decoration-none">Fadderliste</a>
+            <a href="#!" class="text-dark text-decoration-none text-content">Fadderliste</a>
           </p>
         </div>
         {/* <!-- Grid column --> */}
@@ -38,16 +38,16 @@ const Footer = () => {
         {/* <!-- Grid column --> */}
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
           {/* <!-- Links --> */}
-          <h6 class="text-uppercase fw-bold pb-4">Ny student?</h6>
+          <h6 class="text-uppercase fw-bold pb-4 text-sub-title text-sub-title">Ny student?</h6>
 
           <p>
-            <a href="#!" class="text-dark text-decoration-none">Ofte stilte spørsmål</a>
+            <a href="#!" class="text-dark text-decoration-none text-content">Ofte stilte spørsmål</a>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none hvr-underline-reveal">Studentlivet</a>
+            <a href="#!" class="text-dark text-decoration-none hvr-underline-reveal text-content">Studentlivet</a>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none">Studentorganisasjoner</a>
+            <a href="#!" class="text-dark text-decoration-none text-content">Studentorganisasjoner</a>
           </p>
         </div>
         {/* <!-- Grid column --> */}
@@ -55,11 +55,11 @@ const Footer = () => {
         {/* <!-- Grid column --> */}
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           {/* <!-- Links --> */}
-          <h6 class="text-uppercase fw-bold pb-4">Kontakt</h6>
+          <h6 class="text-uppercase fw-bold pb-4 text-sub-title">Kontakt</h6>
 
-          <p><i class="fa-solid fa-location-dot fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark">Gullbringvegen 36, 3800 Bø, Norge</a></p>
-          <p><i class="fa-solid fa-at fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark">fadderstyretbo@gmail.com</a></p>
-          <p><i class="fa-brands fa-facebook-f fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark">facebook.com/fadderstyretbo</a></p>
+          <p><i class="fa-solid fa-location-dot fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark text-content">Gullbringvegen 36, 3800 Bø, Norge</a></p>
+          <p><i class="fa-solid fa-at fa-sm me-2"></i><a href="#" class="text-decoration-none text-content">fadderstyretbo@gmail.com</a></p>
+          <p><i class="fa-brands fa-facebook-f fa-sm me-2"></i><a href="#" class="text-decoration-none text-content">facebook.com/fadderstyretbo</a></p>
         </div>
         {/* <!-- Grid column --> */}
       </div>
@@ -81,20 +81,11 @@ const Footer = () => {
     {/* <!-- Copyright --> */}
     <div class="container pb-3">
       <hr/>
-      <div class="d-flex justify-content-between text-dark">
+      
         {/* <!-- Left --> */}
-        <div class="f-text">
-          <span>@ 2022 Fadderstyret Bø</span>
+        <div class="text-nav small text-dark">
+          <span> 2022 @ Laget av Adrian Dahl & Krister Iversen</span>
         </div>
-        {/* <!-- Left --> */}
-
-        {/* <!-- Right --> */}
-        <div>
-          <a href="" class="text-dark m-2 small text-decoration-none f-text">
-            <i class="fa-solid fa-globe"></i><span class="ms-2">English</span></a>
-        </div>
-        {/* <!-- Right --> */}
-      </div>
 
     </div>
     {/* <!-- Copyright --> */}
