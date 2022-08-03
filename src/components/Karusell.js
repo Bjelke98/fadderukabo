@@ -36,12 +36,26 @@ export const KarusellItem = ({image, title=" ", description=" "}) => {
 }
 
 const Karusell = ({children}) => {
+ 
   return (
     <OwlCarousel className='owl-theme'
       loop
       margin={20}
       autoplay
-      autoplayHoverPause>
+      autoplayHoverPause
+      responsive={
+         {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      }>
     {children}
   </OwlCarousel>
   );

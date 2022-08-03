@@ -41,7 +41,7 @@ const Navigation = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul className="navbar-nav landing-text">
+        <ul className="navbar-nav text-nav text-uppercase">
 
           <NavigationItem name="Hjem" url="/"/>
           <NavigationItem name="Program" url="program"/>
@@ -49,17 +49,9 @@ const Navigation = () => {
           <NavigationItem name="Info" url="info"/>
           {/* <NavigationItem name="International" url="international"/> */}
 
-          <li className="vr"></li>
-          <li className="nav-item">
-            <div className="btn-group">
-              <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                NO
-              </button>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a className="dropdown-item" href="#">EN</a></li>
-              </ul>
-            </div>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-language mx-2"></i>English</a>
           </li>
 
         </ul>

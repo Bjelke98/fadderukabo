@@ -1,21 +1,12 @@
 import React from 'react'
-
-const InfoBlock = ({title, description, icon}) => (
-  <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-    <div class="mx-5 mb-5 text-center">
-    {icon}
-    <span class="text-sub-title lead">{title}</span>
-    <p class="text-content mt-3">{description}</p>
-    </div>
-  </div>
-)
+import InfoBlock from './InfoBlock'
 
 const Campus = () => (
   <div class="bg-beige py-5">
   <div class="container">
     <div class="row mt-5">
       <div class="text-center">
-      <span class="text-number text-red">03.</span>
+      <span class="text-number text-red">04.</span>
         <span class="text-title">Campus Bø</span>
         </div>
     </div>

@@ -56,7 +56,8 @@
 */
 
 .active-page {
-    
+    color: #232323;
+    font-weight: 7000;
 }
 
 .event-type {
