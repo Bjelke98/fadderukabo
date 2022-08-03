@@ -3,6 +3,7 @@ import React from 'react'
 import Sponsorer from './components/Sponsorer'
 import Karusell, {KarusellItem} from '../../components/Karusell'
 import Campus from './components/Campus'
+import CountDown from './components/CountDown'
 import Fadderuka from './components/Fadderuka'
 
 const StudentlivetKarusell = () => (
