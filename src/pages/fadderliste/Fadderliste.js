@@ -23,9 +23,6 @@ const TableItem = ({name, major, sjef}) => {
 }
 
 const Table = ({søk}) => {
-  function isEmptyOrSpaces(str){
-    return !str || str.trim() === '';
-  }
   const major = useContext(MajorContext);
   const content = [
 {name: "Åsmund Snorresønn Haugaard",m: major.eiendom, s: true},
