@@ -44,10 +44,10 @@ const Footer = () => {
             <a href="#!" class="text-dark text-decoration-none text-content">Ofte stilte spørsmål</a>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none hvr-underline-reveal text-content">Studentlivet</a>
+            <a href="#!" class="text-dark text-decoration-none hvr-underline-reveal text-content">Faddergrupper</a>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none text-content">Studentorganisasjoner</a>
+            <a href="#!" class="text-dark text-decoration-none text-content">Studentgrupper</a>
           </p>
         </div>
         {/* <!-- Grid column --> */}

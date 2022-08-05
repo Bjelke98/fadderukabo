@@ -99,7 +99,7 @@ const Qna = () => {
   return (
     <div class="bg-light py-5">
       <div class="container">
-        <div className="text-center">
+        <div className="">
           <span class="text-number text-primary">03.</span>
           <span class="text-title">Ofte stilte spørsmål</span>
         </div>
@@ -116,26 +116,59 @@ const Qna = () => {
   );
 }
 
-const Contact = () => (
-  <div class="contact-form-wrapper d-flex justify-content-center py-5">
-    <form action="#" class="contact-form">
-      <h5 class="title">Contact us</h5>
-      <p class="description">Feel free to contact us if you need any assistance, any help or another question.
-      </p>
-      <div>
-        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" required/>
+const FacebookCard = ({title, description, image, link="#"}) => (
+  <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8 pt-2 pb-2">
+        <div class="card rounded bg-light border border-light shadow-sm hvr-float h-100 faddergrupper">
+          <div class="bg-image hover-overlay">
+            <img src={image} class="img-fluid rounded-top"/>
+            
+          </div>
+
+          <div class="card-body">
+
+            <h5 class="card-title text-center text-uppercase landing-text pt-2">
+              {title}
+            </h5>
+            <p class="card-text program-text">
+              {description}
+            </p>
+            
+          </div>
+          <div class="card-footer border-light bg-light ">
+            <div class="mx-auto text-center">
+              <button type="button"
+                class="btn btn-sm btn-dark opacity-80 program-text rounded-pill px-4 text-uppercase">
+                bli med
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div>
-        <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required/>
-      </div>
-      <div>
-        <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" required></textarea>
-      </div>
-      <div class="submit-button-wrapper">
-        <input type="submit" value="Send"/>
-      </div>
-    </form>
+)
+
+const Facebook = () => (
+  <div class=" py-5 pb-5">
+  <div class="container">
+    <div class="row text-center pt-5">
+      <span class="text-number text-primary">04.</span>
+      <span class="text-title">Studentgrupper</span>
+    </div>
+    <div class="row gy-2 text-center text-break justify-content-center mt-2">
+      
+      <FacebookCard title="USN-studenter Campus Bø"
+          description="Offentlig gruppe for alle studenter ved USN Campus Bø med over 2300 medlemmer, alt fra selge / kjøpe pensumbøker, utleie av hybel, søknader osv. "
+          image="images/USNStudenter.jpg"/>
+      <FacebookCard title="Fadderuken i Bø"
+          description="Offentlig side for Fadderuka i Bø styrt av Fadderstyret. Her finner du arragamenteter, billettslipp, faddergrupper osv. som er relatert til fadderuka."
+          image="images/event/usn.png"/>
+      <FacebookCard title="Campus Bø Studentboliger"
+          description="Offentlig gruppe for alle studenter som bor på Gullbring, Campus Bø studentbolig. Her legges det alltid ut info relevant for de 270 studentene som befinner seg i bygget."
+          image="images/USNCampus.jpg"/>
+  
+    </div>
   </div>
+</div>
 )
 
 const Info = () => {
@@ -145,7 +178,7 @@ const Info = () => {
       <USN/>
       <FadderStyret/>
       <Qna/>
-      <Contact/>
+      <Facebook/>
     </>
   );
 }

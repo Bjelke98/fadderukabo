@@ -148,7 +148,7 @@ const Fadder03 = () => (
       <span class="text-number text-red">03.</span>
       <span class="text-title">Faddergrupper</span>
     </div>
-    <div class="row gy-2 text-center justify-content-center mt-2">
+    <div class="row gy-2 text-center text-break justify-content-center mt-2">
       
       <Fadder03Card title="Eiendomsmegling"
           description="Legg inn beskrivelse."
