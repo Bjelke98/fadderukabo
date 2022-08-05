@@ -4,6 +4,8 @@ import {
   Link, NavLink,
 } from "react-router-dom";
 
+import useEnglish from '../hooks/useEnglish';
+
 const NavigationItem = ({name, url="unknown"}) => {
   let activeStyle = "active-page";
   let inActiveStyle = "nav-link";
@@ -29,6 +31,11 @@ const BrandItem = () => (
 )
 
 const Navigation = () => {
+  const [english, setEnglish] = useEnglish();
+  const handleEnglish = () => {
+    setEnglish(!english)
+    // window.location.reload(false);
+  };
   return (
     <nav className="navbar navbar-expand-lg nav-style pt-0 pb-0">
     <div className="container">
@@ -50,8 +57,8 @@ const Navigation = () => {
           {/* <NavigationItem name="International" url="international"/> */}
 
           
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-language mx-2"></i>English</a>
+          <li class="nav-item" onClick={handleEnglish}>
+            <a class="nav-link pe-auto" href=''><i class="fa-solid fa-language mx-2"></i>{english ? "Norsk" : "English"}</a>
           </li>
 
         </ul>
