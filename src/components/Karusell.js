@@ -23,15 +23,16 @@ export const KarusellTextItem = ({name, major, description}) => {
   )
 }
 
-export const KarusellItem = ({image, title=" ", description=" "}) => {
+export const KarusellItem = ({image, title=" ", description=" ", link=""}) => {
   
   return (
     <div className="item box rounded">
-      <img src={image}/>
+      <a href={link}><img src={image}/>
       <div className="box-content">
-        <span className="text-title lead">{title}</span>
+        <span className="text-sub-title fs-4">{title}</span>
         <p className="text-content">{description}</p>
       </div>
+      </a>
     </div>
   );
 }

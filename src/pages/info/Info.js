@@ -1,17 +1,22 @@
 import React from 'react'
+import useEnglish from '../../hooks/useEnglish';
+import Translate from '../../Translate';
 
-const FadderCard = ({name, role, image, color}) => (
-  <div class="col-lg-2 col-sm-6 col-xs-6">
+const FadderCard = ({name, role, image}) => (
+  
+  <div class="col-lg-3 col-sm-6 col-xs-6">
     <div class="pb-2"><img src={image}
         alt="profil-bilde" width="150" class="img-fluid rounded-circle my-4"/>
-      <h5 class="mb-0 navfont-text text-uppercase fw-bold">{name}</h5>
-      <hr class={"border border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded "+color}/>
-      <span class="small text-muted">{role}</span>
+      <h5 class="mb-0 text-sub-title fw-bold">{name}</h5>
+      <hr class="border border-primary border-1 opacity-75 mt-2 mb-0 profile-line align-items-center rounded"></hr>
+      <span class="small text-muted text-sub-number">{role}</span>
     </div>
   </div>
 )
 
-const USN = () => {
+const USN = () => { 
+  const [english] = useEnglish();
+  const t = Translate(english);
   return (
     <div>
       <div className="bg-light pb-5">
@@ -25,10 +30,10 @@ const USN = () => {
             <div class="col-md-6 col-sm-12">
               <div class="py-5 pb-5 container">
                   <span class="text-number text-primary">01.</span>
-                  <span class="text-title text-break">Universitetet i Sørøst-Norge</span>
-                  <p class="text-content mt-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                  <span class="text-title text-break">{t.info.usn.title}</span>
+                  <p class="text-content mt-4">{t.info.usn.description1}</p>
                   <br/>
-                  <p class="text-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                  <p class="text-content">{t.info.usn.description2}</p>
                   <div className="text-center">
                     <button type="button"
                     class="btn btn-primary opacity-80 rounded-pill px-4 text-uppercase">
@@ -45,32 +50,31 @@ const USN = () => {
 }
 
 const FadderStyret = () => {
-
+  const [english] = useEnglish();
+  const t = Translate(english);
   return (
     <div>
       <div className="py-5 container">
       <div className="row m-3">
       <span class="text-number text-primary">02.</span>
           <span class="text-title text-break">Fadderstyret Bø</span>
-          <p className="text-content mt-4">Hei</p>
       </div>
       
-      <div class="row row-cols-lg-5 text-center justify-content-between mt-2">
+      <div class="row row-col-lg-3 text-center justify-content-left mt-2">
     
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-        <FadderCard name="Adrian Dahl" role="Leder" image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png" color="border-primary"/>
-
-
-        {/* <div class="col col-sm-6 col-xs-6 mb-4"></div>
-        <div class="col-lg-2 col-sm-6 col-xs-6 mb-4"></div> */}
+        <FadderCard name="Adrian Dahl" role={t.info.styret.role1} image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"/>
+        <FadderCard name="Oda Kvammen" role={t.info.styret.role2} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Turid Lovise Eliassen" role={t.info.styret.role3} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Andrea Sæter" role={t.info.styret.role3} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Thomas Valderhaug" role={t.info.styret.role4} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Erik Rosland" role={t.info.styret.role5} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Herman Simonsen" role={t.info.styret.role5} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Henrik Lindam" role={t.info.styret.role5} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Tone Ytterbøe Nordh" role={t.info.styret.role6} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Albertine Ellingsen" role={t.info.styret.role6} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Åsmund Haugaard" role={t.info.styret.role7} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Anders Johnsen" role={t.info.styret.role7} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Mohammed Abdulrahman" role={t.info.styret.role8} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
 
       </div>
       
@@ -95,28 +99,31 @@ const Question = ({q, a, id}) => (
 )
 
 const Qna = () => {
+  const [english] = useEnglish();
+  const t = Translate(english);
   let id = 0;
   return (
     <div class="bg-light py-5">
       <div class="container">
-        <div className="">
+        <div id='faq'>
           <span class="text-number text-primary">03.</span>
-          <span class="text-title">Ofte stilte spørsmål</span>
+          <span class="text-title">{t.info.faq.title}</span>
         </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
-
-          <Question q="sm1" a="A1etrwetwet" id={id++}/>
-          <Question q="SPM2" a="A2" id={id++}/>
-          <Question q="SPM3" a="A3" id={id++}/>
-          <Question q="SPM4" a="A4" id={id++}/>
-
+          <Question q={t.info.faq.q4} a={t.info.faq.a4} id={id++}/>
+          <Question q={t.info.faq.q1} a={t.info.faq.a1} id={id++}/>
+          <Question q={t.info.faq.q5} a={t.info.faq.a5} id={id++}/>
+          <Question q={t.info.faq.q2} a={t.info.faq.a2} id={id++}/>
+          <Question q={t.info.faq.q6} a={t.info.faq.a6} id={id++}/>
+          
+          <Question q={t.info.faq.q3} a={t.info.faq.a3} id={id++}/>
         </div>
       </div>
     </div>
   );
 }
 
-const FacebookCard = ({title, description, image, link="#"}) => (
+const FacebookCard = ({title, description, image, link="#", bttext}) => (
   <div class="col-lg-3 col-md-6 col-sm-8 col-xs-8 pt-2 pb-2">
         <div class="card rounded bg-light border border-light shadow-sm hvr-float h-100 faddergrupper">
           <div class="bg-image hover-overlay">
@@ -136,10 +143,10 @@ const FacebookCard = ({title, description, image, link="#"}) => (
           </div>
           <div class="card-footer border-light bg-light ">
             <div class="mx-auto text-center">
-              <button type="button"
+              <a href={link}><button type="button"
                 class="btn btn-sm btn-dark opacity-80 program-text rounded-pill px-4 text-uppercase">
-                bli med
-              </button>
+                {bttext}
+              </button></a>
             </div>
           </div>
         </div>
@@ -147,29 +154,38 @@ const FacebookCard = ({title, description, image, link="#"}) => (
       </div>
 )
 
-const Facebook = () => (
+const Facebook = () => {
+  const [english] = useEnglish();
+  const t = Translate(english);
+  return (
   <div class=" py-5 pb-5">
   <div class="container">
-    <div class="row text-center pt-5">
+    <div class="row text-center">
       <span class="text-number text-primary">04.</span>
-      <span class="text-title">Studentgrupper</span>
+      <span class="text-title">{t.info.studentgruppe.title}</span>
     </div>
     <div class="row gy-2 text-center text-break justify-content-center mt-2">
       
-      <FacebookCard title="USN-studenter Campus Bø"
-          description="Offentlig gruppe for alle studenter ved USN Campus Bø med over 2300 medlemmer, alt fra selge / kjøpe pensumbøker, utleie av hybel, søknader osv. "
-          image="images/USNStudenter.jpg"/>
-      <FacebookCard title="Fadderuken i Bø"
-          description="Offentlig side for Fadderuka i Bø styrt av Fadderstyret. Her finner du arragamenteter, billettslipp, faddergrupper osv. som er relatert til fadderuka."
-          image="images/event/usn.png"/>
-      <FacebookCard title="Campus Bø Studentboliger"
-          description="Offentlig gruppe for alle studenter som bor på Gullbring, Campus Bø studentbolig. Her legges det alltid ut info relevant for de 270 studentene som befinner seg i bygget."
-          image="images/USNCampus.jpg"/>
+      <FacebookCard title={t.info.studentgruppe.gp1}
+          description={t.info.studentgruppe.gp1desc} 
+          bttext={t.info.studentgruppe.gp1bt}
+          image="images/USNStudenter.jpg"
+          link=""/>
+      <FacebookCard title={t.info.studentgruppe.gp2}
+          description={t.info.studentgruppe.gp2desc} 
+          bttext={t.info.studentgruppe.gp2bt}
+          image="images/event/usn.png"
+          link=""/>
+      <FacebookCard title={t.info.studentgruppe.gp3}
+          description={t.info.studentgruppe.gp3desc} 
+          bttext={t.info.studentgruppe.gp3bt}
+          image="images/USNCampus.jpg"
+          link=""/>
   
     </div>
   </div>
 </div>
-)
+)}
 
 const Info = () => {
   

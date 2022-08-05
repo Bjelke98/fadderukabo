@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import useEnglish from "../../../hooks/useEnglish";
+import Translate from "../../../Translate";
 
 const newYears = "15 Aug 2022";
 
@@ -32,34 +34,31 @@ const CountDown = () => {
     }, 1000);
     return () => clearInterval(interval);
   }, [setD,setH,setM,setS]);
+  const [english] = useEnglish();
+  const t = Translate(english);
   return (
     <div class="page-overlay">
-    <div class="count-body">
-      <h1 class="landing-text">Fadderuka Bø</h1>
+    <div class="count-body pt-5">
+      <h1 class="text-title">{t.home.count.title}</h1>
       <h4 class="landing-text">15. - 21. August 2022</h4>
       <div class="countdown-container landing-text">
       
         <div class="countdown-el days-c">
           <p class="big-text" id="days">{d}</p>
-          <span>Dager</span>
+          <span>{t.home.count.day}</span>
         </div>
         <div class="countdown-el hours-c">
           <p class="big-text" id="hours">{h}</p>
-          <span>Timer</span>
+          <span>{t.home.count.hour}</span>
         </div>
         <div class="countdown-el mins-c">
           <p class="big-text" id="mins">{m}</p>
-          <span>Minutter</span>
+          <span>{t.home.count.min}</span>
         </div>
         <div class="countdown-el seconds-c">
           <p class="big-text" id="seconds">{s}</p>
-          <span>Sekunder</span>
+          <span>{t.home.count.sec}</span>
         </div>
-      </div>
-      <div class="program-btn">
-        <a class="btn btn-light landing-text" href="#">
-          Program
-        </a>
       </div>
     </div>
   </div>

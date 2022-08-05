@@ -1,7 +1,11 @@
 import React from 'react'
+import useEnglish from '../hooks/useEnglish';
+import Translate from '../Translate';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
-  
+  const [english] = useEnglish();
+  const t = Translate(english);
   return (
     <>
     <footer class="text-center text-lg-start text-dark bg-light">
@@ -21,16 +25,16 @@ const Footer = () => {
         {/* <!-- Grid column --> */}
         <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mb-4">
           {/* <!-- Links --> */}
-          <h6 class="text-uppercase fw-bold pb-4 text-sub-title">Fadderuka</h6>
+          <h6 class="text-uppercase fw-bold pb-4 text-sub-title">{t.footer.h1.title}</h6>
           <p>
-            <a href="#!" class="text-dark text-decoration-none text-content">Fadderprogram</a>
+            <Link to="/program" class="text-dark text-decoration-none text-content">{t.footer.h1.subtitle1}</Link>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none text-content">Studentmesse</a>
+            <Link to="/studentmesse" class="text-dark text-decoration-none text-content">{t.footer.h1.subtitle2}</Link>
           </p>
 
           <p>
-            <a href="#!" class="text-dark text-decoration-none text-content">Fadderliste</a>
+            <Link to="/fadderliste" class="text-dark text-decoration-none text-content">{t.footer.h1.subtitle3}</Link>
           </p>
         </div>
         {/* <!-- Grid column --> */}
@@ -38,16 +42,16 @@ const Footer = () => {
         {/* <!-- Grid column --> */}
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
           {/* <!-- Links --> */}
-          <h6 class="text-uppercase fw-bold pb-4 text-sub-title text-sub-title">Ny student?</h6>
+          <h6 class="text-uppercase fw-bold pb-4 text-sub-title text-sub-title">{t.footer.h2.title}</h6>
 
           <p>
-            <a href="#!" class="text-dark text-decoration-none text-content">Ofte stilte spørsmål</a>
+            <Link to="/info#faq" class="text-dark text-decoration-none text-content">{t.footer.h2.subtitle1}</Link>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none hvr-underline-reveal text-content">Faddergrupper</a>
+            <Link to="/info" class="text-dark text-decoration-none hvr-underline-reveal text-content">{t.footer.h2.subtitle2}</Link>
           </p>
           <p>
-            <a href="#!" class="text-dark text-decoration-none text-content">Studentgrupper</a>
+            <Link to="/fadder#faddergrupper" id='faq' class="text-dark text-decoration-none text-content">{t.footer.h2.subtitle3}</Link>
           </p>
         </div>
         {/* <!-- Grid column --> */}
@@ -55,7 +59,7 @@ const Footer = () => {
         {/* <!-- Grid column --> */}
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           {/* <!-- Links --> */}
-          <h6 class="text-uppercase fw-bold pb-4 text-sub-title">Kontakt</h6>
+          <h6 class="text-uppercase fw-bold pb-4 text-sub-title">{t.footer.h3.title}</h6>
 
           <p><i class="fa-solid fa-location-dot fa-sm me-2"></i><a href="#" class="text-decoration-none text-dark text-content">Gullbringvegen 36, 3800 Bø, Norge</a></p>
           <p><i class="fa-solid fa-at fa-sm me-2"></i><a href="#" class="text-decoration-none text-content">fadderstyretbo@gmail.com</a></p>
@@ -84,7 +88,7 @@ const Footer = () => {
       
         {/* <!-- Left --> */}
         <div class="text-nav small text-dark">
-          <span> 2022 @ Laget av Adrian Dahl & Krister Iversen</span>
+          <span> {t.footer.copyright}</span>
         </div>
 
     </div>

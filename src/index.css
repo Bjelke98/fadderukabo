@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.faddersjef {
+    display: none;
+}
+
 .text-error {
     font-family: "Title";
     display: inline-block;

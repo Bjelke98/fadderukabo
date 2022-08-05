@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import useEnglish from '../hooks/useEnglish';
+import Translate from '../Translate';
 
 const NavigationItem = ({name, url="unknown"}) => {
   let activeStyle = "active-page";
@@ -32,6 +33,7 @@ const BrandItem = () => (
 
 const Navigation = () => {
   const [english, setEnglish] = useEnglish();
+  const t = Translate(english);
   const handleEnglish = () => {
     setEnglish(!english)
     // window.location.reload(false);
@@ -50,10 +52,10 @@ const Navigation = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul className="navbar-nav text-nav">
 
-          <NavigationItem name="Hjem" url="/"/>
-          <NavigationItem name="Program" url="program"/>
-          <NavigationItem name="Fadder" url="fadder"/>
-          <NavigationItem name="Info" url="info"/>
+          <NavigationItem name={t.nav.hjem} url="/"/>
+          <NavigationItem name={t.nav.program} url="program"/>
+          <NavigationItem name={t.nav.fadder} url="fadder"/>
+          <NavigationItem name={t.nav.info} url="info"/>
           {/* <NavigationItem name="International" url="international"/> */}
 
           

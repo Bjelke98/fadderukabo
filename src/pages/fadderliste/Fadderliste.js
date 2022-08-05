@@ -10,11 +10,11 @@ const TableItem = ({name, major, sjef}) => {
         <span class="ms-2 badge rounded-pill bg-light text-dark f-text">
           <i class={"fa-solid me-2 "+(sjef?"fa-crown f-text-"+major.color:"fa-circle-user")}></i>
           {name}
-          {sjef && <span> Faddersjef</span>}
+          {sjef && <span className="faddersjef"> Faddersjef</span>}
         </span>
       </td>
       <td>
-        <span class={"badge badge-pill rounded-pill f-"+major.color}>
+        <span class={"badge badge-pill f-text rounded-pill f-"+major.color}>
           {major.name}
         </span>
       </td>
@@ -230,7 +230,8 @@ const Table = ({søk}) => {
 {name: "Simon Fritzman Laamiri",m: major.international, s: false},
 {name: "Tim Emin André Rajala",m: major.international, s: false},
 {name: "Vetle José Kløvstad",m: major.international, s: false},
-{name: "Oda Kvammen",m: major.international, s: false}
+{name: "Oda Kvammen",m: major.international, s: false},
+{name: "Hyndla Aira",m: major.international, s: false}
 ];
   const filterContent = content.filter(v=>{
     return (v.name.toLowerCase().indexOf(søk.toLowerCase()) !==-1 ||
@@ -241,9 +242,9 @@ const Table = ({søk}) => {
   <div class="table-responsive rounded">
     <table class="table table-striped table-hover align-middle mb fixedHeader">
       <thead class="bg-dark text-white small">
-        <tr>
-          <th>Navn</th>
-          <th>Linje</th>
+        <tr className="text-sub-title small">
+          <th>Student</th>
+          <th>Group</th>
         </tr>
       </thead>
       <tbody class="table-group-divider" id="tableData">
