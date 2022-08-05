@@ -1,8 +1,12 @@
 import React from 'react'
+import useEnglish from '../../../hooks/useEnglish'
+import Translate from '../../../Translate';
 import InfoBlock from './InfoBlock'
 
-
-const Fadderuka = () => (
+const Fadderuka = () => {
+  const [english] = useEnglish();
+  const t = Translate(english)
+  return(
   <div>
     <div class="container py-5 pb-5 ">
     <div class="row">
@@ -10,9 +14,9 @@ const Fadderuka = () => (
         <div class="py-5 pb-5 container">
           <span class="text-number text-blue">01.</span>
           <span class="text-title">Fadderuka</span>
-          <p class="text-content mt-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p class="text-content mt-4">{t.test1}</p>
           <br/>
-          <p class="text-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          {/* <p class="text-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> */}
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
@@ -44,6 +48,6 @@ const Fadderuka = () => (
   </div>
   </div>
   </div>
-)
+)}
 
 export default Fadderuka

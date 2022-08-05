@@ -1,7 +1,12 @@
 import React from 'react'
+import useEnglish from '../../../hooks/useEnglish'
+import Translate from '../../../Translate';
 import InfoBlock from './InfoBlock'
 
-const Campus = () => (
+const Campus = () => {
+  const [english] = useEnglish();
+  const t = Translate(english);
+  return (
   <div class="bg-beige py-5">
   <div class="container">
     <div class="row mt-5">
@@ -25,6 +30,6 @@ const Campus = () => (
     </div>
   </div>
   </div>
-)
+)}
 
 export default Campus
