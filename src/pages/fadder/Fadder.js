@@ -206,19 +206,24 @@ const Fadder04 = () => {
           <div class="col-12 m-auto">
 
               <Karusell>
-              <KarusellTextItem name="Sara"
+              <KarusellTextItem name="Sara Snapa"
                   major={major.marked}
-                  description="na aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-              <KarusellTextItem name="Sara"
-                  major={major.it}
-                  description="I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo"/>
-              <KarusellTextItem name="Kjetil"
+                  description="Da jeg kom til Bø i fjor kjente jeg ingen her. Fadderuka var en kjempe gøy uke hvor jeg ble kjent med de jeg skulle gå i klasse med, men også utrolig mange fra forskjellige linjer. Aktivitetene var inkluderende og man kjente fort på det gode studentmiljøet Bø har å by på!"/>
+              
+              <KarusellTextItem name="Aleksandra"
+                  major={major.international}
+                  description="Taking part in this programme allowed me to not only understand better Scandinavian culture and literature but also improve my Norwegian language skills. It was an unique experience which I could share with people from all around the world. I highly recommed taking this opportunity to everyone!"/>
+              
+              <KarusellTextItem name="Kjetil Alsen"
                   major={major.innovasjon}
-                  description="I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo"/>
-              <KarusellTextItem name="Navn"
-                  major={major.eiendom}
-                  description="I vårt kart kan du eneklt og elegant lete etter boliger der du ønsker å bo"/>
+                  description="Fadderuken er den absolutt beste måten å bli kjent med studentene i Bø. Et mer inkluderende og morsomt studentmiljø finner du ingen annen plass"/>
+              
+              <KarusellTextItem name="Sara Wang"
+                  major={major.kultur}
+                  description="Veldig positiv opplevelse første året. Kjente ingen da jeg flyttet til bø, så fadderuka ble ett spennende første møte med nye medstudenter, Kroa og ikke minst bygda. Ta det helt med ro, du kommer garantert til å bli kjent med fantastiske folk og trives veldig på universitetet!"/>
               </Karusell>
+
+
 
           </div>
         </div>

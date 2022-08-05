@@ -8,7 +8,7 @@ const NavigationItem = ({name, url="unknown"}) => {
   let activeStyle = "active-page";
   let inActiveStyle = "nav-link";
   return (
-    <li class="nav-item">
+    <li class="nav-item px-3">
       <NavLink to={url} onClick={CloseNav} className={({ isActive }) => inActiveStyle + (isActive? " "+activeStyle : "")}>
         {name}
       </NavLink>
@@ -31,7 +31,7 @@ const BrandItem = () => (
 const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg nav-style pt-0 pb-0">
-    <div className="container-fluid">
+    <div className="container">
       
       <BrandItem/>
 
@@ -41,7 +41,7 @@ const Navigation = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul className="navbar-nav text-nav text-uppercase">
+        <ul className="navbar-nav text-nav">
 
           <NavigationItem name="Hjem" url="/"/>
           <NavigationItem name="Program" url="program"/>

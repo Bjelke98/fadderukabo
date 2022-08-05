@@ -8,6 +8,7 @@ import Home from "./pages/home/Home";
 import Program from "./pages/program/Program";
 import Fadder from "./pages/fadder/Fadder";
 import Info from "./pages/info/Info";
+import Studentmesse from "./pages/studentmesse/Studentmesse";
 import NotFound from "./pages/NotFound";
 
 import { createContext } from "react";
@@ -66,6 +67,7 @@ const App = () => {
       <Route path="fadder" element={<Fadder/>} />
       <Route path="info" element={<Info/>} />
       <Route path="fadderliste" element={<Fadderliste/>} />
+      <Route path="studentmesse" element={<Studentmesse/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
 

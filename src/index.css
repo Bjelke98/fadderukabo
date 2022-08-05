@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+.text-error {
+    font-family: "Title";
+    display: inline-block;
+    width: 100%;
+    font-size: 8rem;
+}
+
 .text-number {
     font-size: 1.25rem;
 }
+/* Image scaling for card*/
 
 .text-sub-number, .text-number {
     font-family: "Title";
@@ -60,7 +68,8 @@
 
 .active-page {
     color: #232323;
-    font-weight: 7000;
+    font-weight: 700;
+    border-bottom: #232323 solid 2px;
 }
 
 .event-type {
@@ -86,11 +95,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-
+}
 
 .nav-link {
-    padding: 25px 5px;
     transition: 0.2s
 }
 
@@ -178,21 +185,7 @@
 .f-text-green { color: #008000; }
 .f-text-skin { color: burlywood; }
 
-.quote-eiendom {
-    color: #87ceeb;
-}
 
-.quote-pink {
-    color: palevioletred;
-}
-
-.quote-innovasjon {
-    color: #F9D923;
-}
-
-.quote-it {
-    color: purple;
-}
 
 .btn:focus {
     outline: none !important;

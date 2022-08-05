@@ -72,7 +72,7 @@ const eventlist = [
 const Day = ({day, event}) => {
   
   return (
-    <div class="py-2">
+    <div class="py-2 bg-beige">
     <div class="container">
       <div class="row justify-content-center">
         <div class="row">
@@ -124,7 +124,7 @@ const Event = ({event}) => {
           <i class="fa-solid fa-location-dot fa-xs me-2 text-muted"></i><span
             class="small text-muted">{position}</span>
           <hr class="m-0"/>
-          <div class="mx-auto mt-2 text-center">
+          <div class="my-auto mt-2 text-center">
             <a class="btn btn-sm btn-dark opacity-80 program-text rounded-pill px-4 text-uppercase m-1 event-btn">
               {buttonText}
             </a>

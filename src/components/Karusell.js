@@ -10,12 +10,12 @@ export const KarusellTextItem = ({name, major, description}) => {
       <div class="container">
         <div class="my-4">
           <span class="text-sub-title">{name}</span>
-          <span class={"text-sub-number small quote-"+major.color}>{major.name}</span>
+          <span class={"text-sub-number small f-text-"+major.color}>{major.name}</span>
         </div>
         <div>
-          <i class={"fa-solid fa-quote-left text-number quote-"+major.color}></i>
-          <p class="text-content small">{description}</p>
-          <i class={"fa-solid fa-quote-right text-number text-end quote-"+major.color}></i>
+          <i class={"fas fa-quote-left  f-text-"+major.color}></i>
+          <p class="text-content small mb-0">{description}</p>
+          <i class={"fa-solid fa-quote-right w-100 text-end f-text-"+major.color}></i>
           
         </div>
       </div>

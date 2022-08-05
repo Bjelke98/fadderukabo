@@ -14,15 +14,6 @@ const FadderCard = ({name, role, image, color}) => (
 const USN = () => {
   return (
     <div>
-      
-    </div>
-  );
-}
-
-const FadderStyret = () => {
-
-  return (
-    <div>
       <div className="bg-light pb-5">
         <div className="container">
           <div class="row">
@@ -49,6 +40,14 @@ const FadderStyret = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+const FadderStyret = () => {
+
+  return (
+    <div>
       <div className="py-5 container">
       <div className="row m-3">
       <span class="text-number text-primary">02.</span>
