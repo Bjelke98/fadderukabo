@@ -532,7 +532,7 @@ const no = {
       title: "Fadderuka Bø",
       day: "dager",
       hour: "timer",
-      min: "minitter",
+      min: "minutter",
       sec: "sekunder"
     },
 

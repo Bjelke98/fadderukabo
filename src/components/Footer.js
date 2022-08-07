@@ -71,12 +71,12 @@ const Footer = () => {
       {/* <!-- Grid row --> */}
     <div class="container">
       <div class="d-flex justify-content-center align-items-center">
-
+      <a href="https://www.instagram.com/fadderuka_bo/">
         <img src="images/Instagram.png" width="100"/>
         <span class="vr me-2 ms-2"></span>
-        <a href="https://www.instagram.com/fadderuka_bo/" class="text-decoration-none text-dark">
+        <span class="text-decoration-none text-dark">
           <h5 class="f-text">@fadderuka_bo</h5>
-        </a>
+        </span></a>
 
       </div>
     </div>

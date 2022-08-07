@@ -111,7 +111,7 @@ const Fadder = () => {
               <div class="p-3">
                 <a href="https://www.sikresiden.no/"><button type="button"
                       class="btn btn-dark opacity-80 rounded-pill px-4 text-uppercase">
-                      <span class="text-content"><a href="#" class="text-decoration-none text-light">sikresiden.no</a></span>
+                      <span class="text-content"><span class="text-decoration-none text-light">sikresiden.no</span></span>
                     </button></a>
               </div>
             </div>
