@@ -73,8 +73,9 @@ const Studentmesse = () => {
                     <StudentmesseCard link="Leder" image="images/studentmesse/nr1fitness.png"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="Leder" image="images/studentmesse/groven.jpg"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="Leder" image="images/studentmesse/rødekors.jpg"  bttext={t.studentmesse.bttext}/>
-                    
                     <StudentmesseCard link="Leder" image="images/studentmesse/gullbring.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="Leder" image="images/studentmesse/klatre.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="Leder" image="images/studentmesse/padle.png"  bttext={t.studentmesse.bttext}/>
                 </div>
             </div>
         </div>

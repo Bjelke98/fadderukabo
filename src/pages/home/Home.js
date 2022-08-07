@@ -24,21 +24,22 @@ const StudentlivetKarusell = () => {
           <div class="col-12 m-auto">
 
             <Karusell>
-              <KarusellItem image="images/kroakonsertbø.jpg" title={t.home.studentlivet.title1} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/bullinn.jpeg" title={t.home.studentlivet.title2} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/dattebayo.jpg" title={t.home.studentlivet.title3} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/pizza.jpeg" title={t.home.studentlivet.title4} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/bøsenter.jpg" title={t.home.studentlivet.title5} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/bøtunet.jpg" title={t.home.studentlivet.title6} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/GullbringKul.jpg" title={t.home.studentlivet.title7} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/gullbringtrening.jpg" title={t.home.studentlivet.title8} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/nr1fitness.jpg" title={t.home.studentlivet.title9} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/sporty.jpg" title={t.home.studentlivet.title10} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/grovenfitness.jpg" title={t.home.studentlivet.title11} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/lifjell.jpg" title={t.home.studentlivet.title13} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/høytoglavt.jpg" title={t.home.studentlivet.title14} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/sommarlandbø.jpg" title={t.home.studentlivet.title15} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
-              <KarusellItem image="images/natur.jpg" title={t.home.studentlivet.title16} description={t.home.studentlivet.desc1} link="" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/kroakonsertbø.jpg" title={t.home.studentlivet.title1} description={t.home.studentlivet.desc1} link="https://www.kroaibo.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/bullinn.jpeg" title={t.home.studentlivet.title2} description={t.home.studentlivet.desc2} link="https://www.facebook.com/The-Bull-Inn-Events-131003466950630" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/dattebayo.jpg" title={t.home.studentlivet.title3} description={t.home.studentlivet.desc3} link="https://www.dattebayo.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/pizza.jpeg" title={t.home.studentlivet.title4} description={t.home.studentlivet.desc4} link="https://www.pizzafjoset.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/bøsenter.jpg" title={t.home.studentlivet.title5} description={t.home.studentlivet.desc5} link="https://bosenteret.no/hjem" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/bøtunet.jpg" title={t.home.studentlivet.title6} description={t.home.studentlivet.desc6} link="https://visitbo.no/sonstebotunet/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/GullbringKul.jpg" title={t.home.studentlivet.title7} description={t.home.studentlivet.desc7} link="https://www.gullbring.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/gullbringtrening.jpg" title={t.home.studentlivet.title8} description={t.home.studentlivet.desc8} link="https://gullbringtrening.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/nr1fitness.jpg" title={t.home.studentlivet.title9} description={t.home.studentlivet.desc9} link="https://www.nr1fitness.no/nr1-fitness-bo" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/sporty.jpg" title={t.home.studentlivet.title10} description={t.home.studentlivet.desc10} link="https://www.sporty24.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/grovenfitness.jpg" title={t.home.studentlivet.title11} description={t.home.studentlivet.desc11} link="https://grovenfitness.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/il.jpg" title={t.home.studentlivet.title12} description={t.home.studentlivet.desc12} link="https://skarphedin.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/lifjell.jpg" title={t.home.studentlivet.title13} description={t.home.studentlivet.desc13} link="https://visitbo.no/lifjellskisenter/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/høytoglavt.jpg" title={t.home.studentlivet.title14} description={t.home.studentlivet.desc14} link="https://hoytlavt.no/bo/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/sommarlandbø.jpg" title={t.home.studentlivet.title15} description={t.home.studentlivet.desc15} link="https://www.sommarland.no/" bttext={t.home.studentlivet.bttext}/>
+              <KarusellItem image="images/natur.jpg" title={t.home.studentlivet.title16} description={t.home.studentlivet.desc16} link="https://visitbo.no/topp-8-vandreturer-i-hostferien/" bttext={t.home.studentlivet.bttext}/>
 
             </Karusell>
 

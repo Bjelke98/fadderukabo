@@ -12,15 +12,15 @@ const TextBox01 = ({fade, children}) => (
 )
 
 const Text01 = ({title, description}) => (
-  <div class="col" id="hjelphus">
+  <div class="col-md-6">
     <span class="text-red landing-text">{title}</span>
     <p class="text-content">{description}</p>
   </div>
 )
 
 const Image01a = ({image}) => (
-  <div class="col">
-  <img class="stepitem img-fluid rounded m-2" src={image}/>
+  <div class="col-md-6">
+  <img class="stepitem img-fluid rounded" src={image}/>
   </div>
 )
 
@@ -100,7 +100,7 @@ const Fadder = () => {
               <img src="images/tryggfadder.png" class="bg-red m-3"/>
             </div>
             <div class="col-md-6 col-xs-12">
-              <div class="m-3">
+              <div class="p-3">
               <span class="text-number">02.</span>
               <span class="text-title text-red text-uppercase">{t.fadder.tryggfadder.title}</span>
               <p class="text-content">{t.fadder.tryggfadder.desc}</p>
@@ -108,11 +108,11 @@ const Fadder = () => {
             </div>
             </div>
             <div class="row pb-5 text-center">
-              <div class="m-3">
-                <button type="button"
+              <div class="p-3">
+                <a href="https://www.sikresiden.no/"><button type="button"
                       class="btn btn-dark opacity-80 rounded-pill px-4 text-uppercase">
                       <span class="text-content"><a href="#" class="text-decoration-none text-light">sikresiden.no</a></span>
-                    </button>
+                    </button></a>
               </div>
             </div>
         </div>
@@ -153,7 +153,7 @@ const Fadder = () => {
     
     const Fadder03 = () => (
     <div class=" py-5 pb-5">
-      <div class="container">
+      <div class="container" id='faddergrupper'>
         <div class="row text-center pt-5">
           <span class="text-number text-red">03.</span>
           <span class="text-title">{t.fadder.faddergrupper.title}</span>
@@ -163,19 +163,19 @@ const Fadder = () => {
           <Fadder03Card title="Eiendomsmegling"
               description={t.fadder.faddergrupper.group1}
               image="images/faddergruppe/eiendomsmeglingcolor.jpg"
-              link=""
+              link="https://www.facebook.com/groups/2816079458536275"
               text={t.fadder.faddergrupper.groupbtn}
               />
               
           <Fadder03Card title="Idrett, trening og ledelse"
               description={t.fadder.faddergrupper.group2}
               image="images/faddergruppe/idrett trening ledelse.jpg (full_page)color.jpg"
-              link=""
+              link="https://www.facebook.com/groups/734399761138627"
               text={t.fadder.faddergrupper.groupbtn}/>
           <Fadder03Card title="Innovasjon og entreprenørskap"
               description={t.fadder.faddergrupper.group3}
               image="images/faddergruppe/Innovasjon-og-entrepren├©rskap_color.jpg"
-              link=""
+              link="https://www.facebook.com/groups/579572243585481"
               text={t.fadder.faddergrupper.groupbtn}/>
           
           <div class="col-del"></div>
@@ -183,17 +183,17 @@ const Fadder = () => {
           <Fadder03Card title="Internasjonal markedsføring og reiseliv"
               description={t.fadder.faddergrupper.group4}
               image="images/faddergruppe/Internasjonal markedsføring og reiseliv.png (full_page)color.png"
-              link=""
+              link="https://www.facebook.com/groups/1142608506307231"
               text={t.fadder.faddergrupper.groupbtn}/>
           <Fadder03Card title="IT og informasjonssystemer"
               description={t.fadder.faddergrupper.group5}
               image="images/faddergruppe/It-og-Informasjonssystemer_color.jpg"
-              link=""
+              link="https://www.facebook.com/groups/514857417062061"
               text={t.fadder.faddergrupper.groupbtn}/>
-          <Fadder03Card title="Kulturledelse"
+          <Fadder03Card title="Kulturledelse, forfatter, litteratur og historie"
               description={t.fadder.faddergrupper.group6}
               image="images/faddergruppe/kullturledelse.jpg (full_page)color.jpg"
-              link=""
+              link="https://www.facebook.com/groups/435167774797320"
               text={t.fadder.faddergrupper.groupbtn}/>
     
           <div class="col-del"></div>
@@ -201,17 +201,17 @@ const Fadder = () => {
           <Fadder03Card title="Natur, miljø og friluftsliv"
               description={t.fadder.faddergrupper.group7}
               image="images/faddergruppe/Natur-og-miljø.jpg (full_page)color.jpg"
-              link=""
+              link="https://www.facebook.com/groups/558155475874968"
               text={t.fadder.faddergrupper.groupbtn}/>
           <Fadder03Card title="Økonomi og ledelse"
               description={t.fadder.faddergrupper.group8}
               image="images/faddergruppe/Økonomi-og-ledelse.jpg (full_page).jpg"
-              link=""
+              link="https://www.facebook.com/groups/536206928164428"
               text={t.fadder.faddergrupper.groupbtn}/>
           <Fadder03Card title="International"
               description={t.fadder.faddergrupper.group9}
               image="images/faddergruppe/engelsk.jpg (full_page)color.jpg"
-              link=""
+              link="https://www.facebook.com/groups/2457601637712853"
               text={t.fadder.faddergrupper.groupbtn}/>
     
         </div>

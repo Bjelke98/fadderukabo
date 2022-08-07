@@ -35,10 +35,10 @@ const USN = () => {
                   <br/>
                   <p class="text-content">{t.info.usn.description2}</p>
                   <div className="text-center">
-                    <button type="button"
+                    <a href="https://www.usn.no/"><button type="button"
                     class="btn btn-primary opacity-80 rounded-pill px-4 text-uppercase">
-                    <span class="text-content"><a href="#" class="text-decoration-none text-light">usn.no</a></span>
-                    </button>
+                    <span class="text-content text-decoration-none text-light">usn.no</span>
+                    </button></a>
                 </div>
               </div>
             </div>
@@ -64,17 +64,17 @@ const FadderStyret = () => {
     
         <FadderCard name="Adrian Dahl" role={t.info.styret.role1} image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"/>
         <FadderCard name="Oda Kvammen" role={t.info.styret.role2} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Turid Lovise Eliassen" role={t.info.styret.role3} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Andrea Sæter" role={t.info.styret.role3} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Thomas Valderhaug" role={t.info.styret.role4} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Erik Rosland" role={t.info.styret.role5} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Herman Simonsen" role={t.info.styret.role5} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Henrik Lindam" role={t.info.styret.role5} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Tone Ytterbøe Nordh" role={t.info.styret.role6} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Albertine Ellingsen" role={t.info.styret.role6} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Åsmund Haugaard" role={t.info.styret.role7} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Turid Lovise Eliassen" role={t.info.styret.role3} image="images/turid.jpg"/>
+        <FadderCard name="Andrea Marie Sæter" role={t.info.styret.role3} image="images/andrea.jpg"/>
+        <FadderCard name="Thomas Valderhaug" role={t.info.styret.role4} image="images/thomas.jpg"/>
+        <FadderCard name="Erik Rosland" role={t.info.styret.role5} image="images/erik.jpg"/>
+        <FadderCard name="Herman Simonsen" role={t.info.styret.role5} image="images/herman.jpg"/>
+        <FadderCard name="Henrik Lindam" role={t.info.styret.role5} image="images/henrik.jpg"/>
+        <FadderCard name="Tone Ytterbøe Nordh" role={t.info.styret.role6} image="images/tone.jpg"/>
+        <FadderCard name="Albertine Ellingsen" role={t.info.styret.role6} image="images/albertine.jpg"/>
+        <FadderCard name="Åsmund Haugaard" role={t.info.styret.role7} image="images/åsmund.jpg"/>
         <FadderCard name="Anders Johnsen" role={t.info.styret.role7} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
-        <FadderCard name="Mohammed Abdulrahman" role={t.info.styret.role8} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Mohammed Abdulrahman" role={t.info.styret.role8} image="images/kanan.jpg"/>
 
       </div>
       
@@ -159,7 +159,7 @@ const Facebook = () => {
   const t = Translate(english);
   return (
   <div class=" py-5 pb-5">
-  <div class="container">
+  <div class="container" id='studentgrupper'>
     <div class="row text-center">
       <span class="text-number text-primary">04.</span>
       <span class="text-title">{t.info.studentgruppe.title}</span>
@@ -170,17 +170,17 @@ const Facebook = () => {
           description={t.info.studentgruppe.gp1desc} 
           bttext={t.info.studentgruppe.gp1bt}
           image="images/USNStudenter.jpg"
-          link=""/>
+          link="https://www.facebook.com/groups/141916303345323"/>
       <FacebookCard title={t.info.studentgruppe.gp2}
           description={t.info.studentgruppe.gp2desc} 
           bttext={t.info.studentgruppe.gp2bt}
           image="images/event/usn.png"
-          link=""/>
+          link="https://www.facebook.com/fadderstyretbo"/>
       <FacebookCard title={t.info.studentgruppe.gp3}
           description={t.info.studentgruppe.gp3desc} 
           bttext={t.info.studentgruppe.gp3bt}
           image="images/USNCampus.jpg"
-          link=""/>
+          link="https://www.facebook.com/groups/818003275681411"/>
   
     </div>
   </div>
