@@ -60,22 +60,22 @@ const Studentmesse = () => {
                 </div>
                 
                 <div className="row px-2 py-5">
-                    <StudentmesseCard link="Leder" image="images/studentmesse/skape.jpg" bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/sigma.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/root.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/emu.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/fremme.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/sdsn.png"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/kroa.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/nito.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/ssn.png"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/gullbring.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/nr1fitness.png"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/groven.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/rødekors.jpg"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/gullbring.png"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/klatre.png"  bttext={t.studentmesse.bttext}/>
-                    <StudentmesseCard link="Leder" image="images/studentmesse/padle.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.instagram.com/skape_usn/" image="images/studentmesse/skape.jpg" bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/sigma.USN/" image="images/studentmesse/sigma.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/root.usn" image="images/studentmesse/root.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/EMUvedUSN" image="images/studentmesse/emu.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/fremmeusn" image="images/studentmesse/fremme.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/studentiusnbo" image="images/studentmesse/sdsn.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.kroaibo.no/" image="images/studentmesse/kroa.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/nitostudentenebo" image="images/studentmesse/nito.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.ssn.no/" image="images/studentmesse/ssn.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.gullbringtrening.no/" image="images/studentmesse/gullbring.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.nr1fitness.no/" image="images/studentmesse/nr1fitness.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://grovenfitness.no/" image="images/studentmesse/groven.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.rodekors.no/lokalforeninger/telemark/bo-og-sauherad/" image="images/studentmesse/rødekors.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.gullbring.no/" image="images/studentmesse/gullbring.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/klatregruppaiboe" image="images/studentmesse/klatre.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://www.facebook.com/groups/bopadlegruppe/" image="images/studentmesse/padle.png"  bttext={t.studentmesse.bttext}/>
                 </div>
             </div>
         </div>

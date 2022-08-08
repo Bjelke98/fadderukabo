@@ -1,3 +1,4 @@
+import { Link } from '@mui/material';
 import React from 'react'
 import useEnglish from '../../hooks/useEnglish';
 import Translate from '../../Translate';
@@ -83,7 +84,7 @@ const FadderStyret = () => {
   );
 }
 
-const Question = ({q, a, id}) => (
+const Question = ({q, a, link, urltext, id}) => (
   <div class="accordion-item border-bottom-0 bg-light">
     <h2 class="accordion-header" id={"flush-heading"+id}>
       <button class="accordion-button collapsed rounded m-2 border text-sub-title" type="button" data-bs-toggle="collapse"
@@ -93,7 +94,9 @@ const Question = ({q, a, id}) => (
     </h2>
     <div id={"flush-collapse"+id} class="accordion-collapse collapse text-content" aria-labelledby={"flush-heading"+id}
       data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body pb-5 pt-0">{a}</div>
+      <div class="accordion-body pb-5 pt-0">{a}
+      <a class="mx-2" href={link}>{urltext}</a>
+      </div>
     </div>
   </div>
 )
@@ -110,11 +113,11 @@ const Qna = () => {
           <span class="text-title">{t.info.faq.title}</span>
         </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
-          <Question q={t.info.faq.q4} a={t.info.faq.a4} id={id++}/>
+          <Question q={t.info.faq.q4} a={t.info.faq.a4} id={id++} link="https://www.kroaibo.no" urltext="Kroaibo.no"/>
           <Question q={t.info.faq.q1} a={t.info.faq.a1} id={id++}/>
-          <Question q={t.info.faq.q5} a={t.info.faq.a5} id={id++}/>
+          <Question q={t.info.faq.q5} a={t.info.faq.a5} link="https://www.fadderukabo.no/faddergrupper" urltext="Link" id={id++}/>
           <Question q={t.info.faq.q2} a={t.info.faq.a2} id={id++}/>
-          <Question q={t.info.faq.q6} a={t.info.faq.a6} id={id++}/>
+          <Question q={t.info.faq.q6} a={t.info.faq.a6} id={id++} link="https://www.sikresiden.no" urltext="Sikresiden.no"/>
           
           <Question q={t.info.faq.q3} a={t.info.faq.a3} id={id++}/>
         </div>

@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/home/Home";
 import Program from "./pages/program/Program";
 import Fadder from "./pages/fadder/Fadder";
+import Faddergrupper from "./pages/faddergrupper/Faddergrupper";
 import Info from "./pages/info/Info";
 import Studentmesse from "./pages/studentmesse/Studentmesse";
 import NotFound from "./pages/NotFound";
@@ -67,6 +68,7 @@ const App = () => {
       <Route path="fadder" element={<Fadder/>} />
       <Route path="info" element={<Info/>} />
       <Route path="fadderliste" element={<Fadderliste/>} />
+      <Route path="faddergrupper" element={<Faddergrupper/>} />
       <Route path="studentmesse" element={<Studentmesse/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
