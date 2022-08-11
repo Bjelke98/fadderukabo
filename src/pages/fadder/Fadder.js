@@ -256,6 +256,10 @@ const Fadder = () => {
                       major={major.it}
                       description={t.fadder.quote.q5} />
                   
+                  <KarusellTextItem name="Stine"
+                      major={major.økonomi}
+                      description={t.fadder.quote.q6} />
+
                   </Karusell>
 
                   

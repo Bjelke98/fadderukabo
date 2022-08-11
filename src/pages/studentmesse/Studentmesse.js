@@ -11,7 +11,7 @@ const StudentmesseCard = ({image, link, bttext}) => (
         
         
         <div className="text-center">
-        <a href={link}><button type="button" class="btn btn-sm btn-light text-dark opacity-80 program-text rounded-pill px-4 text-uppercase">
+        <a href={link} target="_blank"><button type="button" class="btn btn-sm btn-light text-dark opacity-80 program-text rounded-pill px-4 text-uppercase">
                     {bttext}</button>
                     </a>
          </div>           
@@ -72,6 +72,8 @@ const Studentmesse = () => {
                     <StudentmesseCard link="https://www.gullbringtrening.no/" image="images/studentmesse/gullbring.jpg"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="https://www.nr1fitness.no/" image="images/studentmesse/nr1fitness.png"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="https://grovenfitness.no/" image="images/studentmesse/groven.jpg"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://boblad.no/" image="images/studentmesse/blad.png"  bttext={t.studentmesse.bttext}/>
+                    <StudentmesseCard link="https://midt-telemark.kommune.no/" image="images/studentmesse/telemark.png"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="https://www.rodekors.no/lokalforeninger/telemark/bo-og-sauherad/" image="images/studentmesse/rødekors.jpg"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="https://www.gullbring.no/" image="images/studentmesse/gullbring.png"  bttext={t.studentmesse.bttext}/>
                     <StudentmesseCard link="https://www.facebook.com/klatregruppaiboe" image="images/studentmesse/klatre.png"  bttext={t.studentmesse.bttext}/>

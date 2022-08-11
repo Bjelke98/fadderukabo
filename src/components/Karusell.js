@@ -33,7 +33,7 @@ export const KarusellItem = ({image, title=" ", description=" ", link="", bttext
         <span className="text-sub-title fs-4">{title}</span>
         <p className="text-content">{description}</p>
         <div className="text-center">
-        <a href={link}><button type="button" class="btn btn-sm btn-light text-dark opacity-80 program-text rounded-pill px-4 text-uppercase">
+        <a href={link} target="_blank"><button type="button" class="btn btn-sm btn-light text-dark opacity-80 program-text rounded-pill px-4 text-uppercase">
                     {bttext}</button>
                     </a>
          </div>           

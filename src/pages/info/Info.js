@@ -64,7 +64,7 @@ const FadderStyret = () => {
       <div class="row row-col-lg-3 text-center justify-content-left mt-2">
     
         <FadderCard name="Adrian Dahl" role={t.info.styret.role1} image="https://cdn.discordapp.com/attachments/745379181214433454/933000365685760030/unknown.png"/>
-        <FadderCard name="Oda Kvammen" role={t.info.styret.role2} image="https://tonsmb.org/wp-content/uploads/2014/03/default-placeholder.png"/>
+        <FadderCard name="Oda Kvammen" role={t.info.styret.role2} image="images/oda.jpg"/>
         <FadderCard name="Turid Lovise Eliassen" role={t.info.styret.role3} image="images/turid.jpg"/>
         <FadderCard name="Andrea Marie Sæter" role={t.info.styret.role3} image="images/andrea.jpg"/>
         <FadderCard name="Thomas Valderhaug" role={t.info.styret.role4} image="images/thomas.jpg"/>
@@ -95,7 +95,7 @@ const Question = ({q, a, link, urltext, id}) => (
     <div id={"flush-collapse"+id} class="accordion-collapse collapse text-content" aria-labelledby={"flush-heading"+id}
       data-bs-parent="#accordionFlushExample">
       <div class="accordion-body pb-5 pt-0">{a}
-      <a class="mx-2" href={link}>{urltext}</a>
+      <a class="mx-2" target="_blank" href={link}>{urltext}</a>
       </div>
     </div>
   </div>
@@ -161,7 +161,7 @@ const Facebook = () => {
   const [english] = useEnglish();
   const t = Translate(english);
   return (
-  <div class=" py-5 pb-5">
+  <div class="py-5 pb-5">
   <div class="container" id='studentgrupper'>
     <div class="row text-center">
       <span class="text-number text-primary">04.</span>
@@ -190,6 +190,34 @@ const Facebook = () => {
 </div>
 )}
 
+const StudentApp = () => {
+  const [english] = useEnglish();
+  const t = Translate(english);
+  return (
+    <div className="container">
+          <div class="row">
+            
+            <div class="col-md-6 col-sm-12 ">
+              <div class="py-5 pb-5 container ">
+                  <span class="text-number text-muted">05.</span>
+                  <span class="text-title text-break">{t.info.studentapp.title}</span>
+                  <p class="text-content mt-4">{t.info.studentapp.desc1}</p><br/>
+                  <p class="text-content">{t.info.studentapp.desc2}</p>
+                  <div className="d-flex">
+                  <a href="https://apps.apple.com/us/app/student-s%C3%B8r%C3%B8st/id1531470703" target="_blank"><img src="images/apple.png" className='img-fluid' width="150"/></a>
+                  <a href="https://play.google.com/store/apps/details?id=no.ssn.studentsorost&gl=NO" target="_blank"><img src="images/googleplay.png" className='img-fluid' width="150"/></a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="py-5 pb-5 container text-center">
+               <img src="images/studentapp.webp" class="img-fluid rounded"/>
+              </div>
+            </div>
+          </div>
+        </div>
+  )}
+
 const Info = () => {
   
   return (
@@ -198,6 +226,7 @@ const Info = () => {
       <FadderStyret/>
       <Qna/>
       <Facebook/>
+      <StudentApp/>
     </>
   );
 }

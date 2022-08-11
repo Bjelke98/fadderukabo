@@ -59,7 +59,7 @@ const Event = ({event}) => {
             class="small text-muted">{position}</span>
           <hr class="m-0"/>
           <div class="my-auto mt-2 text-center">
-            <a href={buttonLink} class="btn btn-sm btn-dark opacity-80 program-text rounded-pill px-4 text-uppercase m-1 event-btn">
+            <a href={buttonLink} target="_blank" class="btn btn-sm btn-dark opacity-80 program-text rounded-pill px-4 text-uppercase m-1 event-btn">
               {buttonText}
             </a>
           </div>
@@ -85,6 +85,7 @@ const Program = () => {
       {
         day: "15. August",
         event: [
+          t.program.day2.event0,
           t.program.day2.event1,
           t.program.day2.event2,
           t.program.day2.event3,
